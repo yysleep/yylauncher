@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/font_size_larger"
+        android:text="@string/dlg_title_update"/>
+    <TextView
+        android:id="@+id/ver_desc_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_marginBottom="12dp"
+        android:textSize="@dimen/font_size_larger"
+        android:textColor="#282828"
+        android:text="@string/dlg_title_update"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray"/>
+    <TextView
+        android:id="@+id/confirm_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/version_update_confirm_bg"
+        android:gravity="center"
+        android:padding="12dp"
+        android:textSize="@dimen/font_size_larger"
+        android:textColor="@color/white"
+        android:text="@string/confirm"/>
+</LinearLayout>

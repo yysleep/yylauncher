@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@android:color/transparent">
+    <TextView
+        android:id="@+id/latest_news_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_large"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text="滚动新闻标题"/>
+    <TextView
+        android:id="@+id/latest_news_summary_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_normal"
+        android:maxLines="2"
+        android:visibility="gone"
+        android:ellipsize="end"
+        android:text="滚动新闻摘要有很多很要分行了多大的事发的所发生的很多内容的打算的范德萨发"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textSize="@dimen/font_size_normal"
+        android:textColor="@color/white"
+        android:text="[点击查看]"/>
+</LinearLayout>

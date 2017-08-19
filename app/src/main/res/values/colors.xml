@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF292929</color>
+    <color name="colorPrimaryDark">#191919</color>
+    <color name="colorAccent">#009cad</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <!-- 主要用于 shortcut 背景的几种色调 -->
+    <color name="shortcut_bg_first_master">#009cad</color>
+    <color name="shortcut_bg_first_slave">#007886</color>
+    <color name="shortcut_bg_second_master">#8dbc21</color>
+    <color name="shortcut_bg_second_slave">#7ca618</color>
+    <color name="shortcut_bg_third_master">#f5bc27</color>
+    <color name="shortcut_bg_third_slave">#d4a11b</color>
+    <color name="shortcut_bg_forth_master">#890a88</color>
+    <color name="shortcut_bg_forth_slave">#720870</color>
+    <color name="shortcut_bg_fifth_master">#f25122</color>
+    <color name="shortcut_bg_fifth_slave">#cb3e16</color>
+    <color name="shortcut_bg_sixth_master">#079ef0</color>
+    <color name="shortcut_bg_sixth_slave">#0888cf</color>
+    <color name="shortcut_bg_unclickable">#5A5B5C</color>
+
+    <color name="window_background">#FF191919</color>
+    <color name="default_box_bg">#5A5B5C</color>
+
+    <color name="dialog_bg_color_normal">#028796</color>
+    <color name="dialog_bg_color_selected">#009cad</color>
+
+    <color name="main_colock">#9abe11</color>
+    <color name="main_health">#deb300</color>
+    <color name="mybutton">#79d5ff</color>
+    <color name="mybuttonup">#55bfbf</color>
+    <color name="background_lights">#ffffff</color>
+    <color name="background_darks">#b3f5ff</color>
+    <color name="light_blue">#94cdf9</color>
+    <color name="textcolor">#ffffff</color>
+    <color name="single_choice_text_color">#df65ac</color>
+    <color name="login_btn">#00abee</color>
+    <color name="return_btn">#707070</color>
+    <color name="main_four">#9abe11</color>
+    <color name="main_weather">#55c5ff</color>
+    <color name="main_happiness">#2674eb</color>
+    <color name="main_two">#deb300</color>
+    <color name="main_three">#5e26251e</color>
+    <color name="all_text_color">#ffffff</color>
+    <color name="fragment_new_color">#4d000000</color>
+    <color name="bg_black">#181818</color>
+    <color name="bg_white">#FFFFFF</color>
+    <color name="bg_topbar">#FCFCFC</color>
+    <color name="bg_gray">#00F1F1F1</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="text_gray">#8D7A71</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_yellow">#FFC800</color>
+    <color name="text_topbar">#3e3e3e</color>
+    <color name="div_white">#E5E5E5</color>
+    <color name="text_green">#66CD00</color>
+    <color name="text_purple">#B23AEE</color>
+    <color name="layout_gray">#6C6C6C</color>
+    <color name="gray">#ADADAD</color>
+    <color name="divider">#B8B8B8</color>
+    <color name="bg_light_grey">#cccccc</color>
+    <color name="bg_btn_grey">#444444</color>
+    <color name="bg_phone_call">#258d17</color>
+    <color name="bg_control_center_border">#dadada</color>
+    <color name="bg_control_center_switch">#979797</color>
+    <color name="bg_control_center_on">#079ef0</color>
+    <color name="red">#de5d5d</color>
+    <color name="big_red">#c73737</color>
+    <color name="bg_grey1">#FFD1D9D0</color>
+
+    <color name="big_green">#19a32c</color>
+    <color name="green">#30b939</color>
+    <color name="yellow">#fcb551</color>
+
+    <color name="default_btn_text">#F8F8F8</color>
+    <drawable name="default_btn_normal_bg">#2674eb</drawable>
+    <drawable name="default_btn_clicked_bg">#4286ef</drawable>
+    <drawable name="default_btn_disable_bg">#888888</drawable>
+    <drawable name="default_btn_disclick_bg">#fcb551</drawable>
+    <drawable name="default_btn_error_bg">#de5d5d</drawable>
+
+    <color name="font_title">#1F1F1F</color>
+    <color name="font_summary">#808080</color>
+    <color name="font_subtitle">#A8A8A8</color>
+    <color name="font_clickable">#2674e0</color>
+    <color name="font_content">#303030</color>
+
+    <color name="message_box_first_bg">#E6E6E6</color>
+    <color name="message_box_first_text">@color/font_title</color>
+    <color name="message_box_first_time">@color/font_subtitle</color>
+
+    <color name="message_box_second_bg">#08ab05</color>
+    <color name="message_box_second_text">#F8F8F8</color>
+    <color name="message_box_second_time">#E8E8E8</color>
+
+    <color name="dialog_btn_default_bg">#E8E8E8</color>
+    <color name="dialog_btn_selected_bg">#D8D8D8</color>
+    <color name="dialog_btn_text">#606060</color>
+
+    <color name="default_img_bg">#F0F0F0</color>
+    <color name="line">#9b9696</color>
+    <color name="tvTab">#ffdad9d9</color>
+</resources>

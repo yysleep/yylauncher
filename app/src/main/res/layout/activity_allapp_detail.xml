@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="100dp"
+    android:padding="12dp">
+    <ImageView
+        android:id="@+id/allapp_icon_iv"
+        android:src="@drawable/ic_launcher"
+        android:layout_width="72dp"
+        android:layout_height="72dp"/>
+    <TextView
+        android:gravity="left|center"
+        android:id="@+id/allapp_title_tv"
+        android:text="360"
+        android:textSize="28sp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_weight="1"
+        android:singleLine="true"
+        android:ellipsize="end"/>
+    <ImageView
+        android:id="@+id/allapp_change_iv"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"/>
+    <ImageView
+        android:id="@+id/allapp_delete_iv"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_allapp_delete"
+        android:visibility="gone"/>
+</LinearLayout>

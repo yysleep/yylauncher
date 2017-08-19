@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp">
+
+    <ImageView
+        android:id="@+id/music_item_album_photo_iv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_music_icons" />
+
+    <TextView
+        android:id="@+id/music_item_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/music_item_album_photo_iv"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="Title" />
+
+    <TextView
+        android:id="@+id/music_item_duration_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/music_item_title_tv"
+        android:layout_toRightOf="@+id/music_item_album_photo_iv"
+        android:gravity="center_vertical"
+        android:text="Duration" />
+
+    <TextView
+        android:id="@+id/music_item_artist_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/music_item_duration_tv"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/music_item_title_tv"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:text="Artist" />
+
+</RelativeLayout>

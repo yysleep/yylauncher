@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/call_ac_pb"
+        style="@android:style/Widget.ProgressBar.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminateDrawable="@drawable/superprogress"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/call_ac_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/default_box_bg"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/call_show_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:onClick="callOnClick"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_larger"
+                android:visibility="invisible" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/call_num_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:ellipsize="start"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="32sp" />
+                <ImageView
+                    android:id="@+id/call_num_delete_iv"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:onClick="callOnClick"
+                    android:src="@drawable/ic_delete_shield"
+                    android:visibility="invisible"
+                    android:contentDescription="@string/app_name" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/call_one_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="callOnClick"
+                    android:text="1"
+                    android:textSize="@dimen/dialing_text_size" />
+                <View
+                    android:background="@color/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"/>
+                <TextView
+                    android:id="@+id/call_four_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="callOnClick"
+                    android:text="4"
+                    android:textSize="@dimen/dialing_text_size" />
+                <View
+                    android:background="@color/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"/>
+                <TextView
+                    android:id="@+id/call_seven_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="callOnClick"
+                    android:text="7"
+                    android:textSize="@dimen/dialing_text_size" />
+                <View
+                    android:background="@color/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"/>
+                <TextView
+                    android:id="@+id/call_xing_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="callOnClick"
+                    android:text="*"
+                    android:textSize="@dimen/dialing_text_size" />
+            </LinearLayout>
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/divider" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/call_two_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="callOnClick"
+                    android:text="2"
+                    android:textSize="@dimen/dialing_text_size" />
+                <View
+                    android:background="@color/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"/>
+                <TextView
+                    android:id="@+id/call_five_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="callOnClick"
+                    android:text="5"
+                    android:textSize="@dimen/dialing_text_size" />
+                <View
+                    android:background="@color/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"/>
+                <TextView
+                    android:id="@+id/call_eight_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="callOnClick"
+                    android:text="8"
+                    android:textSize="@dimen/dialing_text_size" />
+                <View
+                    android:background="@color/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"/>
+                <TextView
+                    android:id="@+id/call_zero_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="callOnClick"
+                    android:text="0"
+                    android:textSize="@dimen/dialing_text_size" />
+            </LinearLayout>
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@color/divider" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/call_three_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="callOnClick"
+                    android:text="3"
+                    android:textSize="@dimen/dialing_text_size" />
+                <View
+                    android:background="@color/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"/>
+                <TextView
+                    android:id="@+id/call_six_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="callOnClick"
+                    android:text="6"
+                    android:textSize="@dimen/dialing_text_size" />
+                <View
+                    android:background="@color/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"/>
+                <TextView
+                    android:id="@+id/call_nine_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="callOnClick"
+                    android:text="9"
+                    android:textSize="@dimen/dialing_text_size" />
+                <View
+                    android:background="@color/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"/>
+                <TextView
+                    android:id="@+id/call_jing_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="callOnClick"
+                    android:text="#"
+                    android:textSize="@dimen/dialing_text_size" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/call_save_or_tocontact_ll"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/default_box_bg"
+                android:onClick="callOnClick">
+
+                <TextView
+                    android:id="@+id/call_save_num_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="保存"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_larger"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/call_go_to_contact_iv"
+                    android:layout_width="@dimen/icon_normal"
+                    android:layout_height="@dimen/icon_normal"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_contact_call" />
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/call_num_btn"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="2"
+                android:background="@color/bg_phone_call"
+                android:onClick="callOnClick"
+                android:text="拨打"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_larger" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

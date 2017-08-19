@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/dialog_pic_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="XXX下载"
+                android:textColor="@color/textcolor"
+                android:textSize="32sp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/dialog_one_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_dialog_cancle"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/id_recorder_dialog_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="下载XXXXXXXXXXXXX"
+                android:textColor="#ffffff"
+                android:textSize="24sp" />
+
+            <ProgressBar
+                android:id="@+id/dialog_progress"
+                style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/dialog_download_percent_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:textColor="@color/textcolor" />
+
+
+            <com.yanhuahealth.healthlauncher.ui.base.MarqueeTextView
+                android:id="@+id/dialog_btn_one_tv"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="确定"
+                style="@style/DefaultBottomBtn" />
+
+            <com.yanhuahealth.healthlauncher.ui.base.MarqueeTextView
+                android:id="@+id/dialog_btn_two_tv"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="取消"
+                style="@style/DefaultBottomBtn" />
+
+            <com.yanhuahealth.healthlauncher.ui.base.MarqueeTextView
+                android:id="@+id/dialog_btn_three_tv"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="短信分享"
+                style="@style/DefaultBottomBtn" />
+
+            <com.yanhuahealth.healthlauncher.ui.base.MarqueeTextView
+                android:id="@+id/dialog_btn_four_delete_tv"
+                android:layout_width="match_parent"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:background="@color/red"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="移除"
+                style="@style/DefaultBottomBtn" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

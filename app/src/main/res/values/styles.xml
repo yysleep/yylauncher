@@ -1,0 +1,139 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Dialog-->
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@null</item>
+
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+
+    </style>
+
+    <!--DialogText-->
+    <style name="DialogText">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="DialogText.Title">
+        <item name="android:textSize">@dimen/font_size_normal</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme_AudioDialog">
+        <item name="android:windowFrame">@null</item>
+        <!--边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--模糊 -->
+    </style>
+
+    <style name="DialogUtil">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="DefaultListItemTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_size_larger</item>
+        <item name="android:textColor">@color/font_title</item>
+    </style>
+    <style name="DefaultListItemSingleLineTitle" parent="DefaultListItemTitle">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="DefaultListItemSingleLineNormalTitle" parent="DefaultListItemTitle">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">@dimen/font_size_large</item>
+    </style>
+    <style name="DefaultListItemSubtitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_size_normal</item>
+        <item name="android:textColor">@color/font_subtitle</item>
+    </style>
+    <style name="DefaultListItemSingleLineSubtitle" parent="DefaultListItemSubtitle">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="DefaultListItemSummary">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:textSize">@dimen/font_size_large</item>
+        <item name="android:textColor">@color/font_summary</item>
+    </style>
+    <style name="DefaultListItemSingleLineSummary" parent="DefaultListItemSummary">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- 默认按钮 -->
+    <style name="DefaultBtn">
+        <item name="android:textSize">@dimen/default_btn_text_size</item>
+        <item name="android:textColor">@color/default_btn_text</item>
+        <item name="android:background">@drawable/default_btn_bg</item>
+    </style>
+
+    <!-- 下载按钮 -->
+    <style name="DefaultDownloadBtn" parent="DefaultBtn">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/font_size_small</item>
+    </style>
+
+    <!-- 默认底部按钮 -->
+    <style name="DefaultBottomBtn" parent="DefaultBtn">
+        <item name="android:layout_height">@dimen/bottom_btn_height</item>
+    </style>
+
+    <!-- 底部只有一个按钮的场景 -->
+    <style name="BottomSingleBtn" parent="DefaultBottomBtn">
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <!-- 针对底部有两个按钮，分为 left 和 right 两个按钮 -->
+    <style name="BottomLeftBtn" parent="DefaultBottomBtn">
+        <item name="android:background">@color/shortcut_bg_first_master</item>
+    </style>
+    <style name="BottomRightBtn" parent="DefaultBottomBtn">
+        <item name="android:background">@drawable/default_btn_bg</item>
+    </style>
+
+    <style name="CropButton" parent="DefaultBottomBtn">
+        <item name="android:layout_width">120dp</item>
+    </style>
+
+    <!-- TAB 栏风格 -->
+    <style name="DefaultTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/font_size_large</item>
+    </style>
+</resources>

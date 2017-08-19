@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="cache-control" content="no-cache">
+  <title>
+    关爱内容
+  </title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #fff;
+      word-break: normal;
+      word-wrap: break-word;
+    }
+    .title {
+      font-size: 1.8em;
+      font-weight: bold;
+      padding: 1em;
+      color: #434847;
+      line-height: 1.8em;
+    }
+    .time {
+      font-size: 1.2em;
+      font-weight: bold;
+      padding-left: 1.2em;
+      color: #7F7F7F;
+      line-height: 1.2em;
+    }
+    .content {
+      font-size: 1.6em;
+      padding: 0.8em;
+      line-height: 1.6em;
+      color: #454a49;
+      text-align: justify;
+    }
+    .divider {
+      height: 1px;
+      background-color: #d2d6d5;
+    }
+    img {
+      width: 100%;
+      padding-top: 6px;
+      padding-bottom:6px;
+    }
+	</style>
+    <script src="jquery.min.js"></script>
+    <script type="text/javascript">
+    // 获取url请求参数值工具类
+    function geturlString(name) {
+      var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+      var r = window.location.search.substr(1).match(reg);
+      if (r) {
+        return unescape(r[2]);
+      }
+      return null;
+    }
+
+    $(function() {
+        var url = "http://dev.laoyou99.cn/admin/content/detail?id=" + geturlString("id");
+        console.log("===> url: " + url);
+        $.get(url, function(data) {
+            console.log("===> result: " + data);
+            var article = data.data.article;
+            $('#title').html(article.title);
+            $('#create_time').html(article.createTime);
+            $('#content').html(article.content);
+        }).error(function(data) {
+            console.log("===> error: " + data);
+            window.newsDetail.loadFailed();
+        });
+    });
+  </script>
+</head>
+<body>
+  <div class="title" id="title">
+  </div>
+  <div class="time" id="create_time">
+  </div>
+  <div class="content" id="content">
+  </div>
+</body>
+
+</html>

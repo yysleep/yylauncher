@@ -1,0 +1,89 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">4dp</dimen>
+    <dimen name="activity_vertical_margin">4dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="title_texture_width">120px</dimen>
+
+    <dimen name="font_size_smaller">14sp</dimen>
+    <dimen name="font_size_small">17sp</dimen>
+    <dimen name="font_size_normal">20sp</dimen>
+    <dimen name="font_size_large">24sp</dimen>
+    <dimen name="font_size_larger">28sp</dimen>
+    <dimen name="font_size_largest">36sp</dimen>
+
+    <dimen name="shortcut_icon_size">72dp</dimen>
+    <dimen name="shortcut_folder_icon_size">28dp</dimen>
+    <dimen name="shortcut_text_size">26sp</dimen>
+    <dimen name="shortcut_padding_vertical">8dp</dimen>
+    <dimen name="shortcut_margin">2dp</dimen>
+
+    <!-- edittext  -->
+    <dimen name="edit_paddingleft_hint">10dp</dimen>
+    <dimen name="edit_left_right_margin">12dp</dimen>
+    <dimen name="edit_padding">8dp</dimen>
+    <dimen name="edit_padding_left">12dp</dimen>
+    <dimen name="edit_padding_right">12dp</dimen>
+
+    <dimen name="arrow_width">8.0sp</dimen>
+    <dimen name="arrow_height">14.0sp</dimen>
+    <dimen name="field_xheight">50dp</dimen>
+
+    <dimen name="btn_maxheight">80dp</dimen>
+
+    <!-- 列表栏高度       头像大小 ， list item 高度 -->
+    <dimen name="image_normal">20dp</dimen>
+
+    <dimen name="icon_xxsmall">18dp</dimen>
+    <dimen name="icon_xsmall">24dp</dimen>
+    <dimen name="icon_small">32dp</dimen>
+    <dimen name="icon_more">42dp</dimen>
+    <dimen name="icon_normal">48dp</dimen>
+    <dimen name="icon_xnormal">54dp</dimen>
+    <dimen name="icon_minlarge">30dp</dimen>
+    <dimen name="icon_large">64dp</dimen>
+    <dimen name="icon_mlarge">84dp</dimen>
+    <dimen name="icon_llarge">77dp</dimen>
+    <dimen name="icon_xllarge">80dp</dimen>
+    <dimen name="icon_xlarge">96dp</dimen>
+    <dimen name="icon_xmaxlarge">110dp</dimen>
+    <dimen name="icon_xxlarge">128dp</dimen>
+    <dimen name="list_xnormal">64dp</dimen>
+    <dimen name="list_normal">66dp</dimen>
+    <dimen name="list_maxlarge">244px</dimen>
+    <dimen name="list_xmaxlarge">80dp</dimen>
+    <dimen name="list_xxmaxlarge">86dp</dimen>
+    <dimen name="list_xxlarge">100dp</dimen>
+    <dimen name="list_xxxlarge">120dp</dimen>
+
+    <dimen name="shortcut_box_corner">10dp</dimen>
+
+    <dimen name="badge_size">28dp</dimen>
+    <dimen name="badge_margin_top">18dp</dimen>
+    <dimen name="badge_margin_right">24dp</dimen>
+
+    <dimen name="list_item_paddingTop">16dp</dimen>
+    <dimen name="list_item_paddingBottom">16dp</dimen>
+    <dimen name="list_item_paddingLeft">12dp</dimen>
+    <dimen name="list_item_paddingRight">12dp</dimen>
+
+    <dimen name="list_item_thumb_size">64dp</dimen>
+
+    <!-- 用于交互消息中的每个 message box 距离左右的长度 -->
+    <dimen name="message_box_radius">8dp</dimen>
+    <dimen name="message_box_padding_vertical">12dp</dimen>
+    <dimen name="message_box_padding_horizontal">12dp</dimen>
+    <dimen name="message_box_margin_short">12dp</dimen>
+    <dimen name="message_box_margin_long">56dp</dimen>
+
+    <dimen name="default_btn_text_size">@dimen/font_size_larger</dimen>
+    <dimen name="bottom_btn_height">64dp</dimen>
+
+    <dimen name="dialog_message_corner">8dp</dimen>
+
+    <!-- 拨号键盘上的字体大小 -->
+    <dimen name="dialing_text_size">36sp</dimen>
+
+    <dimen name="appbar_padding_top">8dp</dimen>
+</resources>

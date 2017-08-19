@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    android:paddingTop="@dimen/list_item_paddingTop"
+    android:paddingBottom="@dimen/list_item_paddingBottom"
+    android:paddingLeft="@dimen/list_item_paddingLeft"
+    android:paddingRight="@dimen/list_item_paddingRight">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/tv_sms_number"
+            android:layout_width="match_parent"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:textColor="@color/font_title"
+            android:textSize="@dimen/font_size_large"
+            android:text="对方账号名"/>
+        <TextView
+            android:id="@+id/tv_sms_date"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:textColor="@color/font_subtitle"
+            android:text="2016-03-28 18:25"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_sms_body"
+        android:textSize="@dimen/font_size_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxLines="1"
+        android:textColor="@color/font_summary"
+        android:text="短信内容"/>
+</LinearLayout>

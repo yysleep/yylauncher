@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/nav_all_view"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary">
+    <TextView
+        android:id="@+id/nav_title_tv"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="这里是标题"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/font_size_larger"
+        android:gravity="center"/>
+    <ImageView
+        android:id="@+id/nav_left_iv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="4dp"
+        android:src="@drawable/ic_back"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"/>
+    <ImageView
+        android:id="@+id/nav_right_iv"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:onClick="yanhuaOnClick"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/ic_menu"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/app_name"/>
+</RelativeLayout>

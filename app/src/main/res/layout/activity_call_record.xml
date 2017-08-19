@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/navbar" />
+
+    <ListView
+        android:id="@+id/call_record_calls_lv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:minHeight="90dp" />
+
+    <Button
+        android:id="@+id/call_record_call_btn"
+        style="@style/DefaultBottomBtn"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:onClick="dialing"
+        android:text="拨号键盘" />
+</LinearLayout>

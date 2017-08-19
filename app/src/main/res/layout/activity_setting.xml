@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.yanhuahealth.healthlauncher.ui.setting.SettingActivity">
+
+    <include layout="@layout/navbar" />
+
+    <RelativeLayout
+        android:id="@+id/sos_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="18dp">
+
+        <ImageView
+            android:id="@+id/sos_icon_iv"
+            android:layout_width="@dimen/icon_normal"
+            android:layout_height="@dimen/icon_normal"
+            android:src="@drawable/ic_sos1" />
+
+        <TextView
+            android:id="@+id/sos_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@id/sos_icon_iv"
+            android:text="一键呼救"
+            android:textSize="@dimen/font_size_larger" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray" />
+
+    <RelativeLayout
+        android:id="@+id/sys_setting_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="18dp">
+
+        <ImageView
+            android:id="@+id/sys_setting_icon_iv"
+            android:layout_width="@dimen/icon_normal"
+            android:layout_height="@dimen/icon_normal"
+            android:src="@drawable/ic_setting1" />
+
+        <TextView
+            android:id="@+id/sys_setting_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@id/sys_setting_icon_iv"
+            android:text="系统设置"
+            android:textSize="@dimen/font_size_larger" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray" />
+
+    <!-- 下载管理 -->
+    <RelativeLayout
+        android:id="@+id/download_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="18dp">
+        <ImageView
+            android:id="@+id/download_icon_iv"
+            android:layout_width="@dimen/icon_normal"
+            android:layout_height="@dimen/icon_normal"
+            android:src="@drawable/ic_down_mgr" />
+        <TextView
+            android:id="@+id/download_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@id/download_icon_iv"
+            android:text="下载管理"
+            android:textSize="@dimen/font_size_larger" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray" />
+
+    <RelativeLayout
+        android:id="@+id/about_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="18dp">
+        <ImageView
+            android:id="@+id/about_icon_iv"
+            android:layout_width="@dimen/icon_normal"
+            android:layout_height="@dimen/icon_normal"
+            android:src="@drawable/ic_about1" />
+        <TextView
+            android:id="@+id/about_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@id/about_icon_iv"
+            android:text="关于"
+            android:textSize="@dimen/font_size_larger" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray" />
+</LinearLayout>

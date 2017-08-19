@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/navbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/sms_return_detail_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="top|start"
+                android:hint="@string/content_sms"
+                android:padding="8dp"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/font_size_larger"/>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/send_sms_btn"
+            style="@style/DefaultBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_btn_height"
+            android:text="@string/send_sms" />
+    </LinearLayout>
+</LinearLayout>

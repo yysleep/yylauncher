@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/navbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/contact_allview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/add_head_image_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:onClick="yanhuaOnClick"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/add_head_image_iv"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="30dp" />
+
+                        <TextView
+                            android:id="@+id/change_bitmap"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="添加头像"
+                            android:textColor="@color/bg_black"
+                            android:textSize="24sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/divider" />
+
+                        <LinearLayout
+                            android:id="@+id/name_new_contact_ll"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="94dp"
+                                android:layout_height="61dp"
+                                android:background="@color/gray"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="姓名"
+                                android:textColor="@android:color/black"
+                                android:textSize="24sp" />
+
+                            <EditText
+                                android:id="@+id/input_name_et"
+                                android:layout_width="match_parent"
+                                android:layout_height="61dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/bg_new_contacts"
+                                android:hint="请输入姓名"
+                                android:maxLength="15"
+                                android:singleLine="true"
+                                android:textCursorDrawable="@null"
+                                android:textSize="24sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/divider" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="94dp"
+                                android:layout_height="61dp"
+                                android:background="@color/gray"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="号码"
+                                android:textColor="@android:color/black"
+                                android:textSize="24sp" />
+
+                            <EditText
+                                android:id="@+id/input_number1_et"
+                                android:layout_width="match_parent"
+                                android:layout_height="61dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@null"
+                                android:hint="输入新号码"
+                                android:inputType="number"
+                                android:maxLength="15"
+                                android:textCursorDrawable="@null"
+                                android:textSize="24sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/divider" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="94dp"
+                                android:layout_height="61dp"
+                                android:background="@color/gray"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="号码"
+                                android:textColor="@android:color/black"
+                                android:textSize="24sp" />
+
+                            <EditText
+                                android:id="@+id/input_number2_et"
+                                android:layout_width="match_parent"
+                                android:layout_height="61dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@null"
+                                android:hint="输入新号码"
+                                android:inputType="number"
+                                android:maxLength="15"
+                                android:textCursorDrawable="@null"
+                                android:textSize="24sp" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/divider" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/all_ll"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/cancel_new_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:background="@color/bg_btn_grey"
+                    android:onClick="yanhuaOnClick"
+                    android:text="取消"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/save_new_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:onClick="yanhuaOnClick"
+                    android:layout_weight="1"
+                    android:background="@color/shortcut_bg_second_master"
+                    android:text="保存"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>
+

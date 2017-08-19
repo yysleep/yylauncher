@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/shortcut_fifth_bg"/>
+    <corners android:topLeftRadius="@dimen/shortcut_box_corner"
+             android:topRightRadius="@dimen/shortcut_box_corner"
+             android:bottomRightRadius="@dimen/shortcut_box_corner"
+             android:bottomLeftRadius="@dimen/shortcut_box_corner"/>
+</shape>

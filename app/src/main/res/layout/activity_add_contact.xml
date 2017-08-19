@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/navbar"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <ImageView
+            android:id="@+id/set_head_image_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_head_image"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="设置快捷联系人后，方便与该联系人打电话、发短信。"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="bottom">
+                <Button
+                    android:id="@+id/select_from_contacts_btn"
+                    android:layout_width="match_parent"
+                    android:onClick="yanhuaOnClick"
+                    android:layout_height="wrap_content"
+                    android:text="从已有联系人中选择"
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/white"
+                    android:background="@color/shortcut_bg_first_master"
+                    android:paddingTop="18dp"
+                    android:paddingBottom="18dp"
+                    android:layout_marginBottom="14dp"
+                    />
+                <Button
+                    android:id="@+id/add_new_contact_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="yanhuaOnClick"
+                    android:text="添加一个新的联系人"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:background="@color/shortcut_bg_second_master"
+                    android:paddingTop="18dp"
+                    android:paddingBottom="18dp"
+                    />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>
+</LinearLayout>

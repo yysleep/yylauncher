@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/navbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/bg_phone_call"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/detail_head_image_iv"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/bg_phone_call"
+                android:contentDescription="联系人头像" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/contacts_name_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:contentDescription="联系人姓名"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/contacts_number_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:contentDescription="联系人号码"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/contacts_number_two_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="联系人号码"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="28sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/bg_phone_call"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/call_phone_btn"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/shortcut_bg_first_master"
+            android:gravity="center"
+            android:onClick="yanhuaOnClick"
+            android:text="打电话"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <View
+            android:id="@+id/detail_divider_vw"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@android:color/black" />
+
+        <Button
+            android:id="@+id/send_message_btn"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom"
+            android:background="@color/shortcut_bg_second_master"
+            android:gravity="center"
+            android:onClick="yanhuaOnClick"
+            android:text="发短信"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@android:color/black" />
+
+    </LinearLayout>
+</LinearLayout>

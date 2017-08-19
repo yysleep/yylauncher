@@ -1,0 +1,44 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.yanhuahealth.healthlauncher.ui.ebook.EbookListFragment">
+    <ListView
+        android:id="@+id/ebooks_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="1px" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/loading_ebook_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ProgressBar
+                android:id="@+id/load_more_ebooks_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@android:style/Widget.Holo.ProgressBar.Large"/>
+            <TextView
+                android:id="@+id/load_ebooks_catid_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                style="@style/DefaultListItemSummary"
+                android:text="正在为您加载最新电子书"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/no_item_tip_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/font_size_normal"
+            android:text="该分类下还没有下载过电子书"/>
+    </FrameLayout>
+
+</FrameLayout>
+

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/navbar" />
+
+
+    <RelativeLayout
+        android:id="@+id/music_detil_lyric_ll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/music_detil_title_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="song"
+            android:textSize="32sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/music_detil_pb"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/music_detil_time_elapsed_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="00:00" />
+
+        <SeekBar
+            android:id="@+id/music_detil_duration_sb"
+            style="@style/Base.Widget.AppCompat.SeekBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:secondaryProgress="0" />
+
+        <TextView
+            android:id="@+id/music_detil_duration_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="00:00" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <!--        <com.yanhuahealth.healthlauncher.utils.musicutils.CustomAudioIcon
+                    android:id="@+id/music_detil_mode_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    custom:color="#66DD22"
+                    custom:type="mode" />-->
+
+        <com.yanhuahealth.healthlauncher.utils.musicutils.CustomAudioIcon
+            android:id="@+id/music_detil_last_btn"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_last_music"
+            custom:color="#66DD22"
+            custom:type="backward" />
+
+        <com.yanhuahealth.healthlauncher.utils.musicutils.CustomAudioIcon
+            android:id="@+id/music_control_startstop_btn"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            custom:color="#66DD22"
+            custom:type="start" />
+
+        <com.yanhuahealth.healthlauncher.utils.musicutils.CustomAudioIcon
+            android:id="@+id/music_control_next_iv"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_next_music"
+            custom:color="#66DD22"
+            custom:type="forward" />
+
+        <!--        <com.yanhuahealth.healthlauncher.utils.musicutils.CustomAudioIcon
+                    android:id="@+id/btnExit"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    custom:color="#66DD22"
+                    custom:type="exit" />-->
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,169 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/bg_black">
+
+    <!--天气时间-->
+    <LinearLayout
+        android:id="@+id/page_one_weather_ll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/shortcut_margin"
+        android:background="@drawable/shortcut_box_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+                <ProgressBar
+                    android:id="@+id/page_ft_time_pg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+                <TextView
+                    android:id="@+id/page_ft_time_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/all_text_color"
+                    android:textSize="48sp" />
+            </FrameLayout>
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="@dimen/font_size_normal"
+                android:background="@color/div_white"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_marginTop="6dp"
+                    android:id="@+id/second_activity_wea_pic_iv"
+                    android:layout_width="60dp"
+                    android:layout_gravity="center"
+                    android:layout_height="60dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@drawable/weather_bottom_bg">
+            <TextView
+                android:id="@+id/second_activity_wea_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/font_size_normal"/>
+            <TextView
+                android:id="@+id/second_activity_tem_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/font_size_normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/shortcut_margin"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <com.yanhuahealth.healthlauncher.ui.base.ShortcutBoxView
+            android:id="@+id/center_third_shortcut"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/shortcut_margin"
+            android:layout_weight="1"
+            app:shortcutIcon="@drawable/ic_launcher"
+            app:shortcutTitle="快捷方式" />
+
+        <com.yanhuahealth.healthlauncher.ui.base.ShortcutBoxView
+            android:id="@+id/center_forth_shortcut"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/shortcut_margin"
+            android:layout_weight="1"
+            app:shortcutIcon="@drawable/ic_launcher"
+            app:shortcutTitle="快捷方式" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/shortcut_margin"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <com.yanhuahealth.healthlauncher.ui.base.ShortcutBoxView
+            android:id="@+id/center_fifth_shortcut"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/shortcut_margin"
+            android:layout_weight="1"
+            app:shortcutIcon="@drawable/ic_launcher"
+            app:shortcutTitle="快捷方式" />
+
+        <com.yanhuahealth.healthlauncher.ui.base.ShortcutBoxView
+            android:id="@+id/center_sixth_shortcut"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/shortcut_margin"
+            android:layout_weight="1"
+            app:shortcutIcon="@drawable/ic_launcher"
+            app:shortcutTitle="快捷方式" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/shortcut_margin"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <com.yanhuahealth.healthlauncher.ui.base.ShortcutBoxView
+            android:id="@+id/center_seventh_shortcut"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/shortcut_margin"
+            android:layout_weight="1"
+            app:shortcutIcon="@drawable/ic_launcher"
+            app:shortcutTitle="快捷方式" />
+
+        <com.yanhuahealth.healthlauncher.ui.base.ShortcutBoxView
+            android:id="@+id/center_eighth_shortcut"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/shortcut_margin"
+            android:layout_weight="1"
+            app:shortcutIcon="@drawable/ic_launcher"
+            app:shortcutTitle="快捷方式" />
+    </LinearLayout>
+
+</LinearLayout>

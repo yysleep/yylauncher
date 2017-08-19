@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">延华桌面</string>
+
+    <string name="server_host">114.215.237.162</string>
+    <string name="server_port">80</string>
+
+    <string name="health_assistant">小秘书</string>
+    <string name="xf_assistant">健康管家</string>
+
+    <string name="title_activity_add_contact">新增联系人</string>
+    <string name="title_activity_wlan">无线设置</string>
+
+    <string name="exit">退出</string>
+    <string name="back">返回</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="save">保存</string>
+    <string name="dlg_title_update">更新提示</string>
+    <string name="dlg_title_downloading_apk">正在下载更新包</string>
+
+    <string name="preparing_card">Preparing card</string>
+    <string name="no_storage_card">No storage card</string>
+    <string name="not_enough_space">Not enough space</string>
+    <string name="saving_image">正在保存中</string>
+
+    <string name="main_shanghai">上海</string>
+
+    <string name="callOnClick">CallOnClick</string>
+
+    <string name="yanhuaOnClick">yanhuaOnClick</string>
+
+    <!-- 短信相关 -->
+    <string name="new_sms">新建短信</string>
+    <string name="content_sms">输入短信内容</string>
+    <string name="send_sms">发送</string>
+
+    <!--紧急求救 -->
+    <string name="sos_third_summary">编辑后在你发送的紧急短信中</string>
+    <string name="sos_sms">我遇到麻烦了，快来帮我(从延华桌面紧急求助发出)</string>
+
+    <!-- 语音频道 -->
+    <string name="title_voice_channel">语音频道</string>
+
+    <!-- 电子书 -->
+    <string name="title_ebook">电子书</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- 列表的下拉刷新-->
+    <string name="header_hint_normal">下拉刷新</string>
+    <string name="header_hint_ready">松开刷新数据</string>
+    <string name="header_hint_loading">正在加载...</string>
+    <string name="header_last_time">上次更新时间：</string>
+    <string name="footer_hint_normal">查看更多</string>
+    <string name="footer_hint_ready">松开载入更多</string>
+    <string name="header_hint_success">刷新成功</string>
+    <string name="not_updated_yet">暂未更新过</string>
+    <string name="updated_at">上次更新于%1$s前</string>
+    <string name="updated_just_now">刚刚更新</string>
+    <string name="time_error">时间有问题</string>
+
+    <!-- 一键查话费 -->
+    <string name="query_balance_tip">正在为您查询话费，预计需要1分钟，请稍后</string>
+</resources>

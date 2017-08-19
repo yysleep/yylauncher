@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/navbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/contact_list_item_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80dp"></ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/contact_list_new_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:background="@color/shortcut_bg_sixth_master"
+                android:onClick="yanhuaOnClick"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="新建"
+                android:textColor="@color/white"
+                android:textSize="32sp" />
+
+            <Button
+                android:id="@+id/contact_list_select_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:background="@color/shortcut_bg_second_slave"
+                android:onClick="yanhuaOnClick"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="搜索"
+                android:textColor="@color/white"
+                android:textSize="32sp" />
+
+            <EditText
+                android:id="@+id/contact_list_select_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@drawable/bg_search_contacts"
+                android:gravity="center"
+                android:hint="请输入姓名"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:singleLine="true"
+                android:textColorHint="@color/bg_control_center_switch"
+                android:textSize="32sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/contact_list_pb"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

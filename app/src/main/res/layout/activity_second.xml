@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/second_activity_ll"
+    android:layout_width="match_parent"
+    android:background="#000000"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    android:padding="2dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="1dp"
+        android:background="#595959"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/second_activity_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#595959"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:maxLength="6"
+            android:singleLine="true"
+            android:hint="未命名"
+            android:textColor="@color/textcolor"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:layout_margin="1dp"
+                android:orientation="horizontal">
+
+                <com.yanhuahealth.healthlauncher.ui.base.ShortcutBoxView
+                    android:id="@+id/second_activity_first_shortcut"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    app:shortcutIcon="@drawable/ic_launcher" />
+
+                <com.yanhuahealth.healthlauncher.ui.base.ShortcutBoxView
+                    android:id="@+id/second_activity_second_shortcut"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    app:shortcutIcon="@drawable/ic_launcher" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:layout_margin="1dp"
+                android:orientation="horizontal">
+
+                <com.yanhuahealth.healthlauncher.ui.base.ShortcutBoxView
+                    android:id="@+id/second_activity_third_shortcut"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    app:shortcutIcon="@drawable/ic_launcher"
+                    app:shortcutTitle="快捷方式" />
+
+                <com.yanhuahealth.healthlauncher.ui.base.ShortcutBoxView
+                    android:id="@+id/second_activity_forth_shortcut"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    app:shortcutIcon="@drawable/ic_launcher"
+                    app:shortcutTitle="快捷方式" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:layout_margin="1dp"
+                android:orientation="horizontal">
+
+                <com.yanhuahealth.healthlauncher.ui.base.ShortcutBoxView
+                    android:id="@+id/second_activity_fifth_shortcut"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    app:shortcutIcon="@drawable/ic_launcher"
+                    app:shortcutTitle="快捷方式" />
+
+                <com.yanhuahealth.healthlauncher.ui.base.ShortcutBoxView
+                    android:id="@+id/second_activity_sixth_shortcut"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    app:shortcutIcon="@drawable/ic_launcher"
+                    app:shortcutTitle="快捷方式" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:layout_margin="1dp"
+                android:orientation="horizontal">
+
+                <com.yanhuahealth.healthlauncher.ui.base.ShortcutBoxView
+                    android:id="@+id/second_activity_seventh_shortcut"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    app:shortcutIcon="@drawable/ic_launcher"
+                    app:shortcutTitle="快捷方式" />
+
+                <com.yanhuahealth.healthlauncher.ui.base.ShortcutBoxView
+                    android:id="@+id/second_activity_eighth_shortcut"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    app:shortcutIcon="@drawable/ic_launcher"
+                    app:shortcutTitle="快捷方式" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:layout_margin="1dp"
+                android:orientation="horizontal">
+
+                <com.yanhuahealth.healthlauncher.ui.base.ShortcutBoxView
+                    android:id="@+id/second_activity_ninth_shortcut"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    app:shortcutIcon="@drawable/ic_launcher"
+                    app:shortcutTitle="快捷方式" />
+
+                <com.yanhuahealth.healthlauncher.ui.base.ShortcutBoxView
+                    android:id="@+id/second_activity_tenth_shortcut"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    app:shortcutIcon="@drawable/ic_launcher"
+                    app:shortcutTitle="快捷方式" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:layout_margin="1dp"
+                android:orientation="horizontal">
+
+                <com.yanhuahealth.healthlauncher.ui.base.ShortcutBoxView
+                    android:id="@+id/second_activity_eleventh_shortcut"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    app:shortcutIcon="@drawable/ic_launcher"
+                    app:shortcutTitle="快捷方式" />
+
+                <com.yanhuahealth.healthlauncher.ui.base.ShortcutBoxView
+                    android:id="@+id/second_activity_twelfth_shortcut"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    app:shortcutIcon="@drawable/ic_launcher"
+                    app:shortcutTitle="快捷方式" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:layout_margin="1dp"
+                android:orientation="horizontal">
+
+                <com.yanhuahealth.healthlauncher.ui.base.ShortcutBoxView
+                    android:id="@+id/second_activity_thirteeth_shortcut"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    app:shortcutIcon="@drawable/ic_launcher"
+                    app:shortcutTitle="快捷方式" />
+
+                <com.yanhuahealth.healthlauncher.ui.base.ShortcutBoxView
+                    android:id="@+id/second_activity_fourteeth_shortcut"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    app:shortcutIcon="@drawable/ic_launcher"
+                    app:shortcutTitle="快捷方式" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="145dp"
+                android:layout_margin="1dp"
+                android:orientation="horizontal">
+
+                <com.yanhuahealth.healthlauncher.ui.base.ShortcutBoxView
+                    android:id="@+id/second_activity_fifteenth_shortcut"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    app:shortcutIcon="@drawable/ic_launcher"
+                    app:shortcutTitle="快捷方式" />
+
+                <com.yanhuahealth.healthlauncher.ui.base.ShortcutBoxView
+                    android:id="@+id/second_activity_sixteenth_shortcut"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    app:shortcutIcon="@drawable/ic_launcher"
+                    app:shortcutTitle="快捷方式" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

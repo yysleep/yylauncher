@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#202010">
+
+        <EditText
+            android:id="@+id/phone_send_number_et"
+            android:layout_width="200dp"
+            android:layout_height="64dp"
+            android:layout_centerInParent="true"
+            android:background="@color/text_white"
+            android:gravity="center|left"
+            android:hint="输入号码"
+            android:inputType="number"
+            android:padding="8dp"
+            android:textColor="@color/bg_black"
+            android:textCursorDrawable="@null"
+            android:textSize="28sp" />
+
+        <ImageView
+            android:id="@+id/nav_send_left_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_back" />
+
+        <ImageView
+            android:id="@+id/nav_send_right_iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_contacts2_sms" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/detail_divider_vw"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@android:color/black" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/search_contact_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible">
+        </ListView>
+    <LinearLayout
+        android:id="@+id/send_sms_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/sms_detail_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="379dp"
+                    android:background="@null"
+                    android:gravity="top|start"
+                    android:hint="@string/content_sms"
+                    android:padding="8dp"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/font_size_larger"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/send_sms_btn"
+            style="@style/DefaultBtn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_btn_height"
+            android:text="@string/send_sms" />
+    </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

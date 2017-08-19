@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#eeeeee"
+              android:gravity="bottom">
+    <RelativeLayout
+        android:id="@+id/news_rl_header_content"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <LinearLayout
+            android:id="@+id/news_layout_header_text"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/news_tv_header_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="下拉刷新"/>
+            <TextView
+                android:id="@+id/news_header_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="上次刷新时间："
+                android:textSize="12sp"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/iv_header_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/news_layout_header_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-35dp"
+            android:src="@drawable/ic_default_ptr_flip"/>
+
+        <com.yanhuahealth.healthlauncher.tool.LoadView
+            android:id="@+id/pg_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/news_layout_header_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-40dp"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

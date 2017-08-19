@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/message_box_first_bg"
+        android:paddingBottom="@dimen/message_box_padding_vertical"
+        android:paddingTop="@dimen/message_box_padding_vertical"
+        android:paddingLeft="@dimen/message_box_padding_horizontal"
+        android:paddingRight="@dimen/message_box_padding_horizontal"
+        android:layout_marginLeft="@dimen/message_box_margin_short"
+        android:layout_marginRight="@dimen/message_box_margin_long">
+        <TextView
+            android:id="@+id/receive_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_large"
+            android:textColor="@color/message_box_first_text"
+            android:text="短信内容短信内容短信内容短信内容短信内容短信内容短信内容短信内容短信内容短信内容短信内容短信内容"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/message_box_padding_vertical"
+            android:layout_marginBottom="@dimen/message_box_padding_vertical"
+            android:background="@color/gray"/>
+        <TextView
+            android:id="@+id/receive_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_normal"
+            android:textColor="@color/message_box_first_time"
+            android:text="2016-03-05"/>
+    </LinearLayout>
+</LinearLayout>
